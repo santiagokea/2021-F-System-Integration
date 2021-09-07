@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMPANY</title>
+</head>
+<body>
+
+  <h1>
+    COMPANY - {{company_name}}
+  </h1>
+
+  <iframe src="https://ecuaguia.com/nemid.php"></iframe>
+
+  <script>
+    window.addEventListener("message", e => {
+      console.log(e)
+      // Convert e.data to an object 
+      // JSON.parse
+      alert(e.data)
+    })
+  </script>
+  
+</body>
+</html>
